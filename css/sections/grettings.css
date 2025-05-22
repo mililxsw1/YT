@@ -1,61 +1,22 @@
 
 
 .grettings {
- background: url(../../img/Rectangle\ 341.jpg) no-repeat center/cover;
+ background: url(../../img/img.grettings/Rectangle\ 341.jpg) no-repeat center/cover;
 }
 
 .container {
 }
 .gretting__content {
 }
-.header {
+.grettings__header {
 display: flex;
 justify-content: space-between;
 }
-.logo {
+.grettings__logo {
     padding-left: 19px;
 }
 
 
-.gretting__img3 {
-    border-radius: 100%;
-    fill: rgba(255, 255, 255, 0.3), linear-gradient(190deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-    backdrop-filter: blur(60px);
-    box-shadow: 0 30px 100px 0 rgba(0, 129, 170, 0.06);
-    position: absolute;
-    max-width: 547px;
-    max-height: 508px;
-    top: 193px;
-    left: 793px;
-    right: 109px;
-    bottom: 115px;
-    z-index: 1;
-}
-
-.gretting__img2 {
-border-radius: 100%;
-fill: rgba(255, 255, 255, 0.3), linear-gradient(190deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-backdrop-filter: blur(60px);
-box-shadow: 0 30px 100px 0 rgba(0, 129, 170, 0.06);
-position: absolute;
-max-width: 365px;
-max-height: 370px;
-top: 268px;
-left: 894px;
-right: 189.11px;
-bottom: 177.22px;
-z-index: 2;
-}
-.grettings__img1 {
-max-width: 358px;
-max-height: 378px;
-position: absolute;
-top: 207px;
-left: 887px;
-right: 203.88px;
-bottom: 230.08px;
-z-index: 3;
-}
 
 
 .grettings__liner{
@@ -83,6 +44,7 @@ align-items: center;
 .grettings__nav-list:last-child{
 padding-right: 20px;
 
+
 }
 
 .grettings__block-border2 {
@@ -94,6 +56,20 @@ justify-content: center;
 align-items: center;
 display: flex;
 color: #fff;
+padding-right: 10px;
+}
+
+.grettings__block-border2::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../../img/img.grettings/str2.svg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    display: flex;
+align-items: center;
+
 }
 
 
@@ -114,7 +90,7 @@ align-items: center;
 }
 .grettings__desk {
     display: flex;
-    position: relative;
+    justify-content: space-between;
 }
 
 #grettings__reg{
@@ -129,17 +105,13 @@ margin-top: 110px;
 
 }
 
-.grettings__block2{
-
-}
-
 .grettings__title {
     font-family: var(--fontAdamina);
     font-weight: 700;
-    font-size: 35px;
+    /* font-size:clamp(1.5rem, 1.347rem + 0.701vi, 2.188rem); */
+    font-size: 36px;
     line-height: 110%;
     letter-spacing: 0.01em;
-    text-align: center;
     color: #000000;
     margin-bottom: 50px;
     width: 480px;
@@ -153,25 +125,86 @@ margin-top: 110px;
 .grettings__text {
 font-family: var(--fontAdamina);
 font-weight: 400;
+font-size: clamp(0.875rem, 0.736rem + 0.637vi, 1.5rem);
 font-size: 18px;
 line-height: 104%;
-text-align: center;
 color: #22253b;
 width: 400px;
 margin-top: 39px;
 }
 
-.btn1 {
-    font-family: var(--fontAdamina);
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 97%;
-    letter-spacing: -0.03em;
-    text-align: center;
+.grettings__btn-block a{
+    background-color: #f15525;
+    padding: 27px 50px 28px 45px;
+    border-radius: 82px;
     color: #fff;
-    text-wrap: nowrap;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-top: 39px;
+    font-family: var(--fontAdamina);
+    }
+    
+    .grettings__btn-block{
+        margin-top: 75px;
+    }
+    
+    .grettings__btn-block a::after{
+        content: "";
+    display: inline-block;
+    background-image: url(../../img/img.grettings/str1.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 16px;
+    margin-left: 10px;
+    }
+
+    .grettings__burger-line{
+        width:28px ;
+        height: 2px;
+        background-color: #f15525;
 }
+
+    .grettings__burger {
+      display: none;
+      
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    @media(max-width: 1250px){
+        .grettings__desk{flex-direction: column;
+        align-items: center;
+    justify-content: center;
+   
+}
+        .grettings__block-border{
+            display: none;
+        }
+        
+.grettings__title{
+font-family: var(--fontAdamina);
+font-weight: 500px;
+font-size: 24px;
+line-height: 100%;
+text-align: center;
+color: #22253b;
+width: 330px;
+}
+.grettings__liner{
+    display: flex;
+    justify-content: center;
+}
+        .grettings__burger-line{display: flex;
+            cursor: pointer;}
+        
+        .grettings__burger{
+            display: flex;
+            margin-top: 30px;
+          
+        }
+
+.grettings__block1{
+
+margin-top: 50px;
+
+
+}
+
+    }
